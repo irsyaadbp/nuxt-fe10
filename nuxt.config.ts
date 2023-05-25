@@ -6,4 +6,5 @@ export default defineNuxtConfig({
       script: [{ src: "https://cdn.tailwindcss.com?plugins=aspect-ratio" }],
     },
   },
+  modules: ["@privyid/nhp"],
 });
