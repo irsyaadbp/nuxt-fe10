@@ -11,7 +11,7 @@ if (!data.value) {
     statusCode: 404,
     message: "Character Not Found From Error Boundary",
     statusMessage: "Character Not Found From Error Boundary",
-    fatal: true,
+    // fatal: true,
   });
 }
 </script>

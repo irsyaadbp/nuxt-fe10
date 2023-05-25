@@ -6,9 +6,13 @@
 
 <script setup lang="ts">
 function handleShowError() {
-  throw new Error("Trigger error from function");
-  //   throw createError("Trigger error from function");
-  //   throw showError("Trigger fatal error from function");
+  // throw new Error("Trigger error from function");
+  throw createError({
+    statusCode: 404,
+    message: "Trigger from function",
+    // fatal: true,
+  });
+  // throw showError("Trigger fatal error from function");
 }
 </script>
 

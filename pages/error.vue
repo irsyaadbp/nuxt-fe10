@@ -1,14 +1,12 @@
 <script setup lang="ts">
 const listMenu = [
   { title: "Page Root", to: "/error/page-root" },
-  // { title: "useError", to: "/error/use-error" },
   { title: "Error Boundary", to: "/error/error-boundary/list" },
   { title: "From Function", to: "/error/from-function" },
   { title: "Route Middleware", to: "/error/route-middleware" },
   { title: "Server Middleware", to: "/error/server-middleware" },
 ];
 const clearError = async (err) => {
-  // Go to the first lesson
   await navigateTo("/error");
   err.value = null;
 };
@@ -16,7 +14,7 @@ const clearError = async (err) => {
 <template>
   <h2 class="text-center font-bold text-2xl mb-12">Error Handling</h2>
   <Card>
-    <div class="-p-6 rounded-lg flex divide-x divide-dashed h-full">
+    <div class="rounded-lg flex divide-x divide-dashed h-full">
       <div class="w-1/5">
         <ul role="list" class="divide-y divide-gray-100 sticky top-0">
           <NuxtLink

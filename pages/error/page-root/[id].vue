@@ -10,6 +10,7 @@ if (!data.value) {
   throw createError({
     statusCode: 404,
     message: "Character Not Found From Page Root",
+    fatal: true,
   });
 }
 </script>
